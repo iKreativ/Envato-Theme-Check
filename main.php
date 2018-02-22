@@ -121,41 +121,31 @@ function tc_strip_comments( $code ) {
 		$token = next($tokens);
 	}
 	return $return;
-} 
+}
 
 
 function tc_intro() {
 ?>
 	<h2><?php _e( 'About', 'theme-check' ); ?></h2>
-	<p><?php _e( "The Theme Check plugin is an easy way to test your theme and make sure it's up to date with the latest theme review standards. With it, you can run all the same automated testing tools on your theme that WordPress.org uses for theme submissions.", 'theme-check' ); ?></p>
-	<h2><?php _e( 'Contact', 'theme-check' ); ?></h2>
-	<p><?php printf( __( 'Theme Check is maintained by %1$s and %2$s.', 'theme-check' ),
-		'<a href="https://profiles.wordpress.org/otto42/">Otto42</a>',
-		'<a href="https://profiles.wordpress.org/pross/">Pross</a>'
-		); ?></p>
-	<p><?php printf( __( 'If you have found a bug or would like to make a suggestion or contribution, please leave a post on the <a href="%1$s">WordPress forums</a>, or talk about it with the theme review team on <a href="%2$s">Make WordPress Themes</a> site.', 'theme-check' ), 'https://wordpress.org/tags/theme-check?forum_id=10', 'https://make.wordpress.org/themes/') ; ?></p>
-	<p><?php printf( __( 'The code for Theme Check can be contributed to on <a href="%s">GitHub</a>.', 'theme-check' ), 'https://github.com/Otto42/theme-check'); ?></p>
-	<h3><?php _e( 'Testers', 'theme-check' ); ?></h3>
-	<p><a href="https://make.wordpress.org/themes/"><?php _e( 'The WordPress Theme Review Team', 'theme-check' ); ?></a></p>
+	<p><?php _e( "The Envato Theme Check plugin is an easy way to test your theme and make sure it's up to date with the latest Themeforest review standards. With it, you can run all the same automated testing tools on your theme that Themeforest Reviewers use for theme submissions.", 'theme-check' ); ?></p>
 	<?php
 }
 
 function tc_success() {
 	?>
-	<div class="tc-success"><p><?php _e( 'Now your theme has passed the basic tests you need to check it properly using the test data before you upload to the WordPress Themes Directory.', 'theme-check' ); ?></p>
-	<p><?php _e( 'Make sure to review the guidelines at <a href="https://codex.wordpress.org/Theme_Review">Theme Review</a> before uploading a Theme.', 'theme-check' ); ?></p>
-	<h3><?php _e( 'Codex Links', 'theme-check' ); ?></h3>
-	<ul>
-	<li><a href="https://codex.wordpress.org/Theme_Development"><?php _e('Theme Development', 'theme-check' ); ?></a></li>
-	<li><a href="https://wordpress.org/support/forum/5"><?php _e('Themes and Templates forum', 'theme-check' ); ?></a></li>
-	<li><a href="https://codex.wordpress.org/Theme_Unit_Test"><?php _e('Theme Unit Tests', 'theme-check' ); ?></a></li>
-	</ul></div>
+	<div class="tc-success">
+		<p><?php _e( 'Congratulations! Your theme has passed the basic tests.', 'theme-check' ); ?></p>
+
+		<p><?php _e( 'Next, import the <a href="//codex.wordpress.org/Theme_Unit_Test">WordPress Theme Unit Test Data</a> and ensure all default content is properly formatted.', 'theme-check' ); ?></p>
+
+		<p><?php _e( 'Finally, review the <a href="//help.market.envato.com/hc/en-us/articles/202822450-WordPress-Theme-Submission-Requirements">WordPress Theme Submission Requirements</a> before uploading your WordPress Theme.', 'theme-check' ); ?></p>
+	</div>
 	<?php
 }
 
 function tc_form() {
 	$themes = tc_get_themes();
-	echo '<form action="themes.php?page=themecheck" method="post">';
+	echo '<form action="themes.php?page=envato_theme_check" method="post">';
 	echo '<select name="themename">';
 	foreach( $themes as $name => $location ) {
 		echo '<option ';

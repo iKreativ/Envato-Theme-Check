@@ -1,17 +1,15 @@
-=== Theme Check ===
-Contributors: Otto42, pross
-Author URI: http://ottopress.com/
-Plugin URL: http://ottopress.com/wordpress-plugins/theme-check/
+=== Themeforest Specific Theme Check ===
+Author URI: http://ikreativ.com/
+Plugin URL: https://github.com/iKreativ/Envato-Theme-Check
 Requires at Least: 3.7
 Tested Up To: 4.4
 Tags: template, theme, check, checker, tool, wordpress, wordpress.org, upload, uploader, test, guideline, review
-Stable tag: 20151211.1
 
-A simple and easy way to test your theme for all the latest WordPress standards and practices. A great theme development tool!
+Envato Theme Check is a modified fork of the original Theme Check by Otto42 with additional Themeforest specific WordPress checks.
 
 == Description ==
 
-The theme check plugin is an easy way to test your theme and make sure it's up to spec with the latest [theme review](https://make.wordpress.org/themes/handbook/review/) standards. With it, you can run all the same automated testing tools on your theme that WordPress.org uses for theme submissions.
+The Envato Theme Check plugin is an easy way to test your theme and make sure it's up to date with the latest Themeforest review standards. With it, you can run all the same automated testing tools on your theme that Themeforest Reviewers use for theme submissions.
 
 The tests are run through a simple admin menu and all results are displayed at once. This is very handy for theme developers, or anybody looking to make sure that their theme supports the latest WordPress theme standards and practices.
 
@@ -54,7 +52,7 @@ comments, or feedback:[[br]]
 If **either** of these two vars are defined a new trac tickbox will appear next to the *Check it!* button.
 
 == Changelog ==
-= 20151211.1 = 
+= 20151211.1 =
 * Full sync with Github and all the changes that have happened there.
 * Release for 4.4 deprecated functions.
 
@@ -108,11 +106,11 @@ If **either** of these two vars are defined a new trac tickbox will appear next 
 * Add check for wp_link_pages() + fix eval() check
 
 = 20110219.2 =
-* Merged new UI props Gua Bob [1](http://guabob.com/) 
+* Merged new UI props Gua Bob [1](http://guabob.com/)
 * Last tested theme is always pre-selected in the themes list.
 * Fixed php error in admin_menu.php
 
-= 20110219.1 = 
+= 20110219.1 =
 * See [commit log](https://github.com/Pross/theme-check/commits/) for changes.
 
 = 20110201.2 =

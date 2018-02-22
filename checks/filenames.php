@@ -53,12 +53,6 @@ class File_Checks implements themecheck {
 			}
 		}
 
-		foreach( $rechave as $file => $reason ) {
-			if ( !in_array( $file, $filenames ) ) {
-				$this->error[] = sprintf('<span class="tc-lead tc-recommended">'.__('RECOMMENDED','theme-check').'</span>: '.__('Could not find the file %1$s in the theme. %2$s', 'theme-check'), '<strong>' . $file . '</strong>', $reason );
-			}
-		}
-
 		return $ret;
 	}
 

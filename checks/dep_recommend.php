@@ -17,7 +17,7 @@ class Deprecated_Recommended implements themecheck {
 			array( 'wp_richedit_pre' => '', '4.3' ),
 			array( 'wp_htmledit_pre' => '', '4.3' ),
 			array( 'wp_ajax_wp_fullscreen_save_post' => '', '4.3' ),
-			
+
 			array( 'post_permalink' => 'get_permalink', '4.4'),
 			array( 'wp_get_http' => 'WP_Http', '4.4'),
 			array( 'force_ssl_login' => 'force_ssl_admin', '4.4'),
@@ -55,7 +55,7 @@ class Deprecated_Recommended implements themecheck {
 					$error_msg .= $grep;
 
 					// Add the finalized error message.
-					$this->error[] = '<span class="tc-lead tc-recommended">' . __('RECOMMENDED','theme-check') . '</span>: ' . $error_msg;
+					$this->error[] = '<span class="tc-lead tc-warning">' . __('WARNING','theme-check') . '</span>: ' . $error_msg;
 				}
 			}
 		}
